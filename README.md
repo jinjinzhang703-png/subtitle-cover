@@ -16,8 +16,8 @@ Built with **Swift** and native platform APIs, Subtitle Cover focuses on being s
 - 🎯 **Free positioning**  
   Drag the overlay to wherever the subtitles appear.
 
-- 📐 **Resizable**  
-  Resize the cover from the bottom-right handle.
+- 📐 **Freely resizable**  
+  Drag any edge or any corner. Pinch on the trackpad to scale. Control-drag to draw a new area.
 
 - 🎨 **Custom colors**  
   Choose a color that better matches the video.
@@ -62,19 +62,21 @@ Go to the **Releases** page and download the latest macOS version.
 
 | Action | Function |
 |---|---|
-| Drag the overlay | Move the cover |
-| Drag the bottom-right handle | Resize the cover |
-| Double-click the handle | Open settings |
+| Drag the middle of the overlay | Move the cover |
+| Drag any edge | Resize width or height |
+| Drag any corner | Resize width and height together |
+| Double-click | Open settings |
 | Right-click the overlay | Open the menu |
 
 ### MacBook trackpad
 
 | Action | Function |
 |---|---|
-| Control + drag | Create/select a covering area |
-| Single-finger drag | Move the cover |
-| Drag the resize handle | Resize |
-| Double-click the resize handle | Open settings |
+| Control + drag | Draw a new covering area |
+| Single-finger drag on the middle | Move the cover |
+| Drag an edge or a corner | Resize freely |
+| Pinch | Scale the cover from its center |
+| Double-click | Open settings |
 | Right-click / Control-click | Open the menu |
 
 ---
@@ -116,3 +118,12 @@ Install Swift / Xcode Command Line Tools:
 
 ```bash
 xcode-select --install
+```
+
+Build the app bundle (Apple Silicon, the machine you are building on):
+
+```bash
+./scripts/build-macos-app.sh
+```
+
+The script writes `Subtitle Cover.app` in the repository root. Move it to `/Applications` and launch it. Saved position, size, color, and opacity stay in the existing `subtitle_cover.overlay_settings` preference, so an older install keeps its place on screen.
