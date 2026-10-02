@@ -35,24 +35,27 @@ Built with **Swift** and native platform APIs, Subtitle Cover focuses on being s
 
 ## 🚀 Download
 
-Go to the **Releases** page and download the latest macOS version.
+Download the installer from the latest release:
+
+[Subtitle-Cover-1.1.0.pkg](https://github.com/jinjinzhang703-png/subtitle-cover/releases/download/v1.1.0/Subtitle-Cover-1.1.0.pkg)
+
+Double-click the package. It installs Subtitle Cover into the Applications folder.
 
 ### Requirements
 
 - macOS 13 or later
 - Apple Silicon or Intel Mac
 
-> ⚠️ Current releases are distributed outside the Mac App Store and may be unsigned/not notarized by Apple.
+> ⚠️ The installer is not notarized by Apple. The first time you open it, macOS may say it cannot verify the developer. Open **System Settings → Privacy & Security** and click **Open Anyway**, or right-click the package and choose **Open**.
 
 ---
 
 ## ⚡ Quick Start
 
-1. Download the latest release.
-2. Unzip `Subtitle-Cover-v1.0.0-macOS.zip`.
-3. Move `Subtitle Cover.app` to your Applications folder.
-4. Launch the app.
-5. Drag the overlay onto the subtitle area.
+1. Download `Subtitle-Cover-1.1.0.pkg`.
+2. Double-click it and follow the installer.
+3. Open Subtitle Cover from the Applications folder.
+4. Drag the overlay onto the subtitle area.
 
 ---
 
